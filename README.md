@@ -1,17 +1,17 @@
 ## Taxa4Meta
 
-## Dependencies for this pipeline: 
+## Dependencies for this pipeline
 1) BLCA and NCBI 16S RefSeq database for species annotation of amplicons 
 2) Samtools for fasta manipulation 
 3) biom-format and h5py for OTU matrix conversion
 4) DECIPHIER (R package): IdTaxa and its pre-built RDP databse (v16; curated by IdTaxa) for taxonomic annotation down to genus level
 5) VSEARCH: sequence quality control and sequence clustering
 
-## Description:
+## Description
 
 Perform human gut microbiome meta-analysis, i.e. 16S rRNA gene amplicon data generated from different sequencing strategies. The core concept bases on the accurate taxamonic binning instead of OTU interpretation during gut meta-analysis.
 
-## Usage: 
+## Usage
 
 Do not run Taxa4Meta for combined datasets generated from different 16S variable regions, it has to be used for each dataset first and then merge all collpased species (L7) profiles for downstream meta-analysis.
 
@@ -19,7 +19,7 @@ Taxa4Meta.sh --path /path-to-project-dir/ --threads [integer] --fastq_truncee [i
 
 (Note: all positional parameters must be provided in the same order as indicated above)
 
-## Parameters:
+## Options
 
 --path: Absolute path to the project directory. Arrange data: /ProjectDir/RawReadProcess/SampleDir/RawSequenceFiles
 
@@ -46,7 +46,7 @@ Taxa4Meta.sh --path /path-to-project-dir/ --threads [integer] --fastq_truncee [i
 --ReferenceMode: Perform chimeras removal using reference-based mode, otherwise perform chimeras removal using both de novo mode and reference-based mode;  must be TRUE or FALSE.
 
 
-## Suggested key parameters:
+## Suggested confidence and read length for key 16S variable regions
 
 V1V3:   forward orientation (minReadLen: 200, maxReadLen: 450; GenusConf: 90, SpeciesConf: 60); reverse orientation (minReadLen: 300, maxReadLen: 450; GenusConf: 90, SpeciesConf: 60)
         
@@ -58,7 +58,6 @@ V6V9:   forward orientation (minReadLen: 300, maxReadLen: 450; GenusConf: 90, Sp
 
 
 
-## Notes:
+## Notes
 1) to run your own analysis, you could manipulate lines 89-91 of Taxa4Meta.sh to fit the format of file names of fastq files and sample names 
-
 2) GenusConf is also used to filter ranks above genus level of BLCA output, to get consistent lineage for species/genus annotated by BLCA for downstream analysis, just replace the lineage for species/genus in the final taxonomy with NCBI taxonomic lineage (16SMicrobial.ACC.taxonomy_modification_records.xlsx under 'scripts' directory) if you want to interpret results at collapsed species (L7) level
