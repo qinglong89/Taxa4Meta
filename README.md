@@ -1,4 +1,4 @@
-## Taxa4Meta v1.22 
+## Taxa4Meta
 
 ## Dependencies for this pipeline: 
 1) BLCA and NCBI 16S RefSeq database for species annotation of amplicons 
