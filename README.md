@@ -2,7 +2,9 @@
 
 ## Description
 
-Perform human gut microbiome meta-analysis, i.e. 16S rRNA gene amplicon data generated from different sequencing strategies. The core concept bases on the accurate taxamonic binning instead of OTU interpretation during gut meta-analysis.## Dependencies for this pipeline
+Perform human gut microbiome meta-analysis, i.e. 16S rRNA gene amplicon data generated from different sequencing strategies. The core concept bases on the accurate taxamonic binning instead of OTU interpretation during gut meta-analysis.
+
+## Dependencies for this pipeline
 1) BLCA and NCBI 16S RefSeq database for species annotation of amplicons 
 2) Samtools for fasta manipulation 
 3) biom-format and h5py for OTU matrix conversion
