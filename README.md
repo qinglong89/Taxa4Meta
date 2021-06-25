@@ -58,4 +58,7 @@ V6V9:   forward orientation (minReadLen: 300, maxReadLen: 450; GenusConf: 90, Sp
 
 
 
-## Note: to run your own analysis, you could manipulate lines 89-91 of Taxa4Meta.sh to fit the format of file names of fastq files and sample names 
+## Notes:
+1) to run your own analysis, you could manipulate lines 89-91 of Taxa4Meta.sh to fit the format of file names of fastq files and sample names 
+
+2) GenusConf is also used to filter ranks above genus level of BLCA output, to get consistent lineage for species/genus annotated by BLCA for downstream analysis, just replace the lineage for species/genus in the final taxonomy with NCBI taxonomic lineage (16SMicrobial.ACC.taxonomy_modification_records.xlsx under 'scripts' directory) if you want to interpret results at collapsed species (L7) level
