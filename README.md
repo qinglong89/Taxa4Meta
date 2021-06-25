@@ -1,15 +1,13 @@
-## Taxa4Meta
+## Taxa4Meta pipeline
 
-## Dependencies for this pipeline
+## Description
+
+Perform human gut microbiome meta-analysis, i.e. 16S rRNA gene amplicon data generated from different sequencing strategies. The core concept bases on the accurate taxamonic binning instead of OTU interpretation during gut meta-analysis.## Dependencies for this pipeline
 1) BLCA and NCBI 16S RefSeq database for species annotation of amplicons 
 2) Samtools for fasta manipulation 
 3) biom-format and h5py for OTU matrix conversion
 4) DECIPHIER (R package): IdTaxa and its pre-built RDP databse (v16; curated by IdTaxa) for taxonomic annotation down to genus level
 5) VSEARCH: sequence quality control and sequence clustering
-
-## Description
-
-Perform human gut microbiome meta-analysis, i.e. 16S rRNA gene amplicon data generated from different sequencing strategies. The core concept bases on the accurate taxamonic binning instead of OTU interpretation during gut meta-analysis.
 
 ## Usage
 
