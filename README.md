@@ -1,3 +1,8 @@
+Reference:
+Q Wu, S Badu, SY So, TJ Treangen, TC Savidge. The pan-microbiome profiling system Taxa4Meta identifies clinical dysbiotic features and classifies diarrheal disease.
+The Journal of Clinical Investigation, 2024,  134 (2): e170859. https://doi.org/10.1172/JCI170859 
+
+
 ## Taxa4Meta pipeline
 
 ## Description
